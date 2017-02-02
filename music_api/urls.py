@@ -16,15 +16,15 @@ Including another URLconf
 from django.conf.urls import url, include
 from django.contrib import admin
 from rest_framework.routers import DefaultRouter
-from music_sql_api import views
+from music_sql_api.views import *
 
 
 router = DefaultRouter()
-router.register(r'users', views.UserViewSet)
-router.register(r'album', views.AlbumViewSet)
-router.register(r'song', views.SongViewSet)
-router.register(r'artist', views.ArtistViewSet)
-router.register(r'genre', views.GenreViewSet)
+router.register(r'users', user_view.UserViewSet)
+router.register(r'album', album_view.AlbumViewSet)
+router.register(r'song', song_view.SongViewSet)
+router.register(r'artist', artist_view.ArtistViewSet)
+router.register(r'genre', genre_view.GenreViewSet)
 # router.register(r'album_song', views.AlbumSongViewSet)
 
 urlpatterns = [

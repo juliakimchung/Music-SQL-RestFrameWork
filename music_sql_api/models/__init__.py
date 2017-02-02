@@ -1,0 +1,1 @@
+__all__ = ['album_model', 'song_model', 'artist_model', 'genre_model']
