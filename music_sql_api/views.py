@@ -50,8 +50,8 @@ class GenreViewSet(viewsets.ModelViewSet):
 	queryset = Genre.objects.all()
 	serializer_class = GenreSerializer
 
-class AlbumSongViewSet(viewsets.ModelViewSet):
+# class AlbumSongViewSet(viewsets.ModelViewSet):
 
-	queryset = AlbumSong.objects.all()
-	serializer_class = AlbumSongSerializer
+# 	queryset = AlbumSong.objects.all()
+# 	serializer_class = AlbumSongSerializer
 

@@ -48,6 +48,8 @@ class Album(models.Model):
     title = models.CharField(max_length=100, blank=True, default='')
     release_date = models.DateTimeField()
     album_length = models.IntegerField(default=0)
+    label = models.CharField(max_length=100, blank=True, default="")
+    # song = models.ManyToManyField(Song)
     # artist = models.ManyToManyField(Artist)
     
 
@@ -64,8 +66,6 @@ class Album(models.Model):
         Class defining metadata for results of querying the Album method table of music_sql_api
         """
         ordering = ('title',)
-
-
 
 class Song(models.Model):
 
@@ -85,7 +85,9 @@ class Song(models.Model):
     release_date = models.DateTimeField()
     artist = models.ForeignKey('Artist', related_name='songs', on_delete=models.CASCADE )
     genre = models.ForeignKey("Genre", related_name="songs", on_delete=models.CASCADE)
-    album = models.ForeignKey('Album', related_name='songs', on_delete=models.CASCADE)
+    # artist = models.ManyToManyField(Artist)
+    album = models.ForeignKey('Album', related_name="songs", on_delete=models.CASCADE)
+    # album = models.ManyToManyField(Album)
 
     def __str__(self):
         """
@@ -98,6 +100,10 @@ class Song(models.Model):
 
         
             ordering = ('title',)
+
+
+
+
 
 
 class Genre(models.Model):
@@ -126,18 +132,18 @@ class Genre(models.Model):
 
             ordering = ('name',)
 
-class AlbumSong(models.Model):
-    album = models.ForeignKey('Album', related_name="album_artists", on_delete=models.CASCADE)
-    song = models.ForeignKey('Song', related_name='album_artists', on_delete=models.CASCADE)
+# class AlbumSong(models.Model):
+#     album = models.ForeignKey('Album', related_name="album_artists", on_delete=models.CASCADE)
+#     song = models.ForeignKey('Song', related_name='album_artists', on_delete=models.CASCADE)
 
-    def __str__(self):
+#     def __str__(self):
 
-        return self.name
+#         return self.name
 
 
-        class Meta:
+#         class Meta:
 
-            ordering = str(self.id)
+#             ordering = str(self.id)
 
 
 

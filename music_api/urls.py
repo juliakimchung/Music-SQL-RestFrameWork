@@ -25,7 +25,7 @@ router.register(r'album', views.AlbumViewSet)
 router.register(r'song', views.SongViewSet)
 router.register(r'artist', views.ArtistViewSet)
 router.register(r'genre', views.GenreViewSet)
-router.register(r'album_song', views.AlbumSongViewSet)
+# router.register(r'album_song', views.AlbumSongViewSet)
 
 urlpatterns = [
 		url(r'^api/', include(router.urls)),
