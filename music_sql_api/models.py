@@ -49,8 +49,6 @@ class Album(models.Model):
     release_date = models.DateTimeField()
     album_length = models.IntegerField(default=0)
     label = models.CharField(max_length=100, blank=True, default="")
-    # song = models.ManyToManyField(Song)
-    # artist = models.ManyToManyField(Artist)
     
 
     def __str__(self):

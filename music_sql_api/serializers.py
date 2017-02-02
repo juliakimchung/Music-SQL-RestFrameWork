@@ -18,14 +18,6 @@ class ArtistSerializer(serializers.HyperlinkedModelSerializer):
         model = Artist
         fields = ('id', 'url', 'name', 'gender')
 
-class AlbumSerializer(serializers.HyperlinkedModelSerializer):
-    """
-    Class for data serialization of a specific Model: Album
-    """
-
-    class Meta:
-        model = Album
-        fields = ('id', 'url', 'title','label', 'album_length', 'release_date', )
 class GenreSerializer(serializers.HyperlinkedModelSerializer):
 
     class Meta:
@@ -44,4 +36,13 @@ class SongSerializer(serializers.ModelSerializer):
         depth = 1
 
 
+class AlbumSerializer(serializers.HyperlinkedModelSerializer):
+    """
+    Class for data serialization of a specific Model: Album
+    """
+    songs = SongSerializer(many=True, read_only=True)
+
+    class Meta:
+        model = Album
+        fields = ('id', 'url', 'title','label', 'album_length', 'release_date', 'songs')
 
