@@ -1,0 +1,58 @@
+[{
+	"model": "music_sql_api.song",
+	"pk": 1,
+	"fields": {
+		"title": "Tonight",
+		"song_length": 3,
+		"release_date": "2013-02-13T00:00:00Z",
+		"artist": 1,
+		"genre": 2,
+		"album": 1
+	}
+}, {
+	"model": "music_sql_api.song",
+	"pk": 2,
+	"fields": {
+		"title": "Hello",
+		"song_length": 4,
+		"release_date": "2015-10-21T00:00:00Z",
+		"artist": 3,
+		"genre": 1,
+		"album": 3
+	}
+}, {
+	"model": "music_sql_api.song",
+	"pk": 3,
+	"fields": {
+		"title": "Skyfall",
+		"song_length": 4,
+		"release_date": "2011-10-21T00:00:00Z",
+		"artist": 3,
+		"genre": 1,
+		"album": 4
+	}
+}, {
+	"model": "music_sql_api.song",
+	"pk": 4,
+	"fields": {
+		"title": "We Are Never Ever Getting Back together",
+		"song_length": 4,
+		"release_date": "2013-08-21T00:00:00Z",
+		"artist": 2,
+		"genre": 3,
+		"album": 2
+	}
+}, {
+	"model": "music_sql_api.song",
+	"pk": 5,
+	"fields": {
+		"title": "I need a girl",
+		"song_length": 3,
+		"release_date": "2003-02-13T00:00:00Z",
+		"artist": 1,
+		"genre": 2,
+		"album": 1
+	}
+}
+
+]

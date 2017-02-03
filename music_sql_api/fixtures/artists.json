@@ -1,0 +1,30 @@
+[{
+	"model": "music_sql_api.artist",
+	"pk": 1,
+	"fields": {
+		"name": "BigBang",
+		"gender": "M"
+	}
+}, {
+	"model": "music_sql_api.artist",
+	"pk": 2,
+	"fields": {
+		"name": "Taylor Swift",
+		"gender": "F"
+	}
+}, {
+	"model": "music_sql_api.artist",
+	"pk": 3,
+	"fields": {
+		"name": "Adele",
+		"gender": "F"
+	}
+}, {
+	"model": "music_sql_api.artist",
+	"pk": 4,
+	"fields": {
+		"name": "EXO",
+		"gender": "M"
+	}
+ }
+]

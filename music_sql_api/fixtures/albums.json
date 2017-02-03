@@ -1,0 +1,47 @@
+[{
+	"model": "music_sql_api.album",
+	"pk": 1,
+	"fields": {
+		"title": "Tonight",
+		"release_date": "2013-02-13T00:00:00Z",
+		"album_length": 24,
+		"label": "YG Entertainment"
+	}
+}, {
+	"model": "music_sql_api.album",
+	"pk": 2,
+	"fields": {
+		"title": "Red",
+		"release_date": "2012-08-21T03:00:00Z",
+		"album_length": 56,
+		"label": "Big Machine"
+	}
+}, {
+	"model": "music_sql_api.album",
+	"pk": 3,
+	"fields": {
+		"title": "25",
+		"release_date": "1994-10-21T03:00:00Z",
+		"album_length": 40,
+		"label": "XL"
+	}
+}, {
+	"model": "music_sql_api.album",
+	"pk": 4,
+	"fields": {
+		"title": "Skyfall",
+		"release_date": "2011-10-21T03:00:00Z",
+		"album_length": 40,
+		"label": "XL.Colombia"
+	}
+}, {
+	"model": "music_sql_api.album",
+	"pk": 5,
+	"fields": {
+		"title": "We Are Never Ever Getting Back together",
+		"release_date": "1946-08-21T03:00:00Z",
+		"album_length": 40,
+		"label": "Big Machine"
+	}
+ }
+]

@@ -1,0 +1,26 @@
+[{
+	"model": "music_sql_api.genre",
+	"pk": 1,
+	"fields": {
+		"name": "Pop"
+	}
+}, {
+	"model": "music_sql_api.genre",
+	"pk": 2,
+	"fields": {
+		"name": "Hip Pop"
+	}
+}, {
+	"model": "music_sql_api.genre",
+	"pk": 3,
+	"fields": {
+		"name": "Country"
+	}
+}, {
+	"model": "music_sql_api.genre",
+	"pk": 4,
+	"fields": {
+		"name": "Rock"
+	}
+ }
+]
