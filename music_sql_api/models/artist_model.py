@@ -15,7 +15,6 @@ class Artist(models.Model):
     
     name = models.CharField(max_length=200, blank=True)
     gender = models.CharField(max_length = 1, blank=True)
-
     def __str__(self):
         """
         Method to create a string representing a Song Method

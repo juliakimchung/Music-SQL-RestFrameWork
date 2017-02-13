@@ -14,7 +14,7 @@ class Album(models.Model):
 
     """
     title = models.CharField(max_length=100, blank=True, default='')
-    release_date = models.DateTimeField()
+    release_date = models.DateField(default=0)
     album_length = models.IntegerField(default=0)
     label = models.CharField(max_length=100, blank=True, default="")
     

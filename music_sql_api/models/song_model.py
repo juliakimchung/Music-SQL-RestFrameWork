@@ -18,12 +18,12 @@ class Song(models.Model):
 
     title = models.CharField(max_length=200, blank=True)
     song_length = models.IntegerField(default=0)
-    release_date = models.DateTimeField()
+    release_date = models.DateField(default=0)
     artist = models.ForeignKey(Artist, related_name='songs', on_delete=models.CASCADE )
     genre = models.ForeignKey(Genre, related_name="songs", on_delete=models.CASCADE)
-    # artist = models.ManyToManyField(Artist)
+    # artist = models.ManyToManyField(Artist, related_name='songs')
     album = models.ForeignKey(Album, related_name="songs", on_delete=models.CASCADE)
-    # album = models.ManyToManyField(Album)
+    # album = models.ManyToManyField(Album, related_name="songs")
 
     def __str__(self):
         """

@@ -11,7 +11,7 @@
         },
         "genre": {
             "id": 2,
-            "name": "Hip Pop"
+            "name": "Hip Hop"
         },
         "album": {
             "id": 1,
@@ -99,7 +99,7 @@
         },
         "genre": {
             "id": 2,
-            "name": "Hip Pop"
+            "name": "Hip Hop"
         },
         "album": {
             "id": 1,
