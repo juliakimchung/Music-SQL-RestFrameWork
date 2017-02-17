@@ -6,7 +6,6 @@ class SongSerializer(serializers.ModelSerializer):
     """
     Class for data serialization of a specific Model: Song
     """
-    # artist= artist_serializer.ArtistSerializer(read_only = True)
     
 
     class Meta:

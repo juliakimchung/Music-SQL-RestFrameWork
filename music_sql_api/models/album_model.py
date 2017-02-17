@@ -1,4 +1,5 @@
 from django.db import models
+import datetime
 # from django.contrib.auth.models import User
 
 class Album(models.Model):
@@ -14,8 +15,8 @@ class Album(models.Model):
 
     """
     title = models.CharField(max_length=100, blank=True, default='')
-    release_date = models.DateField(default=0)
-    album_length = models.IntegerField(default=0)
+    release_date = models.DateField( blank=True, default=datetime.datetime.now())
+    album_length = models.IntegerField(default=0, blank=True)
     label = models.CharField(max_length=100, blank=True, default="")
     
 
